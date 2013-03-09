@@ -68,6 +68,10 @@ class CustomBootstrap < Sinatra::Base
     halt 404
   end
 
+  get '/' do
+    erb :"base-css"
+  end
+
   get '/:page' do
     erb params[:page].to_sym
   end

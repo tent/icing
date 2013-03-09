@@ -1,0 +1,26 @@
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+.env
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+public
+
+# Added by Tommi Kaikkonen
+
+database.yml
+.sass-cache/
