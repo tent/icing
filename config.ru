@@ -1,5 +1,9 @@
-lib = File.expand_path('lib', File.dirname( __FILE__))
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+[
+  File.expand_path('app', File.dirname( __FILE__)),
+  File.expand_path('lib', File.dirname( __FILE__))
+].each do |path|
+  $LOAD_PATH.unshift(path) unless $LOAD_PATH.include?(path)
+end
 
 require 'bundler'
 Bundler.require
