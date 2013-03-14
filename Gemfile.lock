@@ -1,3 +1,13 @@
+PATH
+  remote: .
+  specs:
+    icing (0.0.1)
+      compass (~> 0.12.2)
+      sass
+      sprockets (~> 2.0)
+      sprockets-helpers (~> 0.2)
+      sprockets-sass (~> 0.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -35,11 +45,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.12.2)
+  icing!
   puma
-  sass
   sinatra
-  sprockets (~> 2.0)
-  sprockets-helpers (~> 0.2)
-  sprockets-sass (~> 0.5)
   tilt

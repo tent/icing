@@ -1,8 +1,7 @@
 require 'sinatra/base'
 require 'sprockets'
 require 'sass'
-require 'sprockets-sass'
-require 'compass'
+require 'icing'
 
 module SprocketsHelpers
   AssetNotFoundError = Class.new(StandardError)
@@ -28,6 +27,8 @@ module SprocketsEnvironment
     paths.each do |path|
       @assets.append_path(File.join(File.expand_path('../../', __FILE__), "assets/#{path}"))
     end
+
+    Icing::Sprockets.setup(@assets)
     @assets
   end
 end
