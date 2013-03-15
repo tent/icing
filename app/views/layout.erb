@@ -12,16 +12,24 @@
   <body>
     <div class='v-navbar-fixed-left'>
       <ul class='unstyled custom-container'>
-        <li class='nav-selected'>
-          <a href='https://tent.is'><div class='nav-icon icon-magnet icon-2x'></div></a>
-        </li>
-
-        <li class='search'>
-          <a href="https://skate.io"><div class='nav-icon icon-dashboard icon-2x'></div></a>
+        <li>
+          <a href='https://tent.is'><div class='nav-icon app-icon-tentstatus icon-2x'></div></a>
         </li>
 
         <li>
-          <a href='<%= full_path('/admin') %>'><div class='nav-icon icon-wrench icon-2x'></div></a>
+          <a href="https://app.tent.is/search" title='Search'><div class='nav-icon app-icon-search icon-2x'></div></a>
+        </li>
+
+        <li>
+          <a href='https://app.tent.is/global' title='Site Feed'><div class='nav-icon app-icon-sitefeed icon-2x'></div></a>
+        </li>
+
+        <li class='nav-selected'>
+          <a href='https://app.tent.is/admin' title='Admin'><div class='nav-icon app-icon-settings icon-2x'></div></a>
+        </li>
+
+        <li>
+          <a href='https://app.tent.is/signout' title='Signout'><div class='nav-icon app-icon-signout icon-2x'></div></a>
         </li>
       </ul>
     </div>
