@@ -1,6 +1,22 @@
-Simple Sinatra App with Bootstrap components.
+Customized Bootstrap CSS.
 
-## Setup
+## Usage
+
+```ruby
+require 'sprockets'
+require 'icing'
+
+environment = Sprockets::Environment.new
+Icing::Sprockets.setup(environment)
+```
+
+```css
+//= require icing
+```
+
+## Development
+
+### Setup
 
 ```
 git clone git://github.com/tent/icing.git
@@ -9,7 +25,7 @@ bundle
 bundle exec puma
 ```
 
-## Editing
+### Editing
 
 - HTML:`lib/views/*.erb`
 - CSS: `assets/stylesheets/*`
