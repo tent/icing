@@ -138,10 +138,10 @@ h5,h6 {
     border-style:solid;
     border-radius: 4px;
 
-    @include background-image(linear-gradient(lighten($mainColor, 5%), $mainColor));
-    background-color: lighten($mainColor, 10%);
-    border-color: darken($mainColor, 7%);
-    @include text-shadow(0 -1px 0 darken($mainColor, 13%));
+    @include background-image(linear-gradient(lighten($mainColor, 10%), lighten($mainColor, 5%)));
+    background-color: lighten($mainColor, 15%);
+    border-color: darken($mainColor, 17%);
+    @include text-shadow(0 -1px 0 darken($mainColor, 23%));
 
     float:right;
     margin-right:$navIconMargin;
@@ -150,22 +150,22 @@ h5,h6 {
 
     &:hover {
       text-decoration:none;
-      color: darken($mainColor, 15%);
+      color: darken($mainColor, 25%);
     }
 
     &:active {
       @include background-image(linear-gradient(darken($mainColor, 5%), $mainColor));
-      color: darken($mainColor, 20%);
+      color: darken($mainColor, 30%);
     }
   }
 
   // Style for the selected icon
   .nav-selected .nav-icon {
     background-image:none;
-    background-color: darken($mainColor, 10%);
-    border-color: darken($mainColor, 15%);
+    background-color: darken($mainColor, 20%);
+    border-color: darken($mainColor, 25%);
     text-shadow:none;
-    color:lighten($mainColor, 5%);
+    color:lighten($mainColor, 15%);
   }
 
 //---------------------
