@@ -1,0 +1,42 @@
+.btn, .nav {
+  [class^="icon-"],
+  [class*=" icon-"] {
+    display: inline;
+    /* keeps button heights with and without icons the same */
+    &.icon-large { line-height: .9em; }
+    &.icon-spin { display: inline-block; }
+  }
+}
+
+.nav-tabs, .nav-pills {
+  [class^="icon-"],
+  [class*=" icon-"] {
+    /* keeps button heights with and without icons the same */
+    &, &.icon-large { line-height: .9em; }
+  }
+}
+
+li, .nav li {
+  [class^="icon-"],
+  [class*=" icon-"] {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+    &.icon-large {
+      /* increased font size for icon-large */
+      width: 1.5625em;
+    }
+  }
+}
+
+ul.icons {
+  list-style-type: none;
+  text-indent: -.75em;
+
+  li {
+    [class^="icon-"],
+    [class*=" icon-"] {
+      width: .75em;
+    }
+  }
+}
