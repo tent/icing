@@ -24,6 +24,8 @@ GEM
     rack (1.5.2)
     rack-protection (1.4.0)
       rack
+    rainpress (1.0)
+    rake (10.1.0)
     sass (3.2.7)
     sinatra (1.3.5)
       rack (~> 1.4)
@@ -36,6 +38,9 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     sprockets-helpers (0.9.1)
       sprockets (~> 2.0)
+    sprockets-rainpress (0.0.1)
+      rainpress
+      sprockets
     sprockets-sass (0.9.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
@@ -47,5 +52,8 @@ PLATFORMS
 DEPENDENCIES
   icing!
   puma
+  rake
   sinatra
+  sprockets
+  sprockets-rainpress
   tilt
