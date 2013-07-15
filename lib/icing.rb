@@ -9,7 +9,7 @@ module Icing
   end
 
   def self.configure(options = {})
-    self.settings[:public_dir] = File.expand_path('../../public/assets', __FILE__) # lib/../public/assets
+    self.settings[:public_dir] ||= File.expand_path('../../public/assets', __FILE__) # lib/../public/assets
   end
 
   module Sprockets
