@@ -545,6 +545,38 @@ h5,h6 {
   z-index:5;
 }
 
+// Form validation
+form {
+  .add-on i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    *margin-right: .3em;
+    line-height: 14px;
+    vertical-align: text-top;
+
+    @include icon-FontAwesome();
+
+    &:before {
+      text-decoration: inherit;
+      display: inline-block;
+      speak: none;
+
+      vertical-align: -10%;
+      font-size: (3em/3);
+    }
+  }
+
+  .has-success .add-on i:before {
+    content: $ok;
+  }
+
+  .has-error .add-on i:before {
+    content: $remove;
+  }
+}
+
 //---------------------
 //
 // AVATARS
