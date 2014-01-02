@@ -5,7 +5,7 @@
 	}
 }
 
-a {
+a, .btn-link {
 	@include link-colors(
 		$mainColor,
 		darken($mainColor, 5%),
