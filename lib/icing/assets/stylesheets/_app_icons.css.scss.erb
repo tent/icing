@@ -9,6 +9,14 @@
 	font-style: normal;
 }
 
+.app-icon-sitefeed, .app-icon-signout, .app-icon-settings, .app-icon-search, .app-icon-tentstatus {
+  font-size: 2em;
+  &.icon-border {
+    border-width: 2px;
+    @include border-radius(4px);
+  }
+}
+
 .app-icon-sitefeed:before, .app-icon-signout:before, .app-icon-settings:before, .app-icon-search:before, .app-icon-tentstatus:before {
 	font-family: 'appicons';
 	speak: none;
