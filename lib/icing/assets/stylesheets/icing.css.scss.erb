@@ -221,6 +221,14 @@ h5,h6 {
   a {
     color: $grayTextColor;
 
+    &.disabled {
+      color: lighten($grayTextColor, 20%);
+      cursor: default;
+      &:hover {
+        color: lighten($grayTextColor, 20%);
+      }
+    }
+
     &:focus {
       outline: none;
     }
