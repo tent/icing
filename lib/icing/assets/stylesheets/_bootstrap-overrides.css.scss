@@ -1,3 +1,7 @@
+.icon-2x {
+  font-size: 2em;
+}
+
 // Double stranded heading hierarchy
 @for $n from 1 through 6 {
 	.heading#{$n} {
