@@ -4,33 +4,9 @@ module Icing
   module Compiler
     extend self
 
-    ASSET_NAMES = %w(
+    ASSET_NAMES = (%w(
       icing.css
-      SourceSansPro-Bold-webfont.eot
-      SourceSansPro-Bold-webfont.svg
-      SourceSansPro-Bold-webfont.ttf
-      SourceSansPro-Bold-webfont.woff
-      SourceSansPro-It-webfont.eot
-      SourceSansPro-It-webfont.svg
-      SourceSansPro-It-webfont.ttf
-      SourceSansPro-It-webfont.woff
-      SourceSansPro-Regular-webfont.eot
-      SourceSansPro-Regular-webfont.svg
-      SourceSansPro-Regular-webfont.ttf
-      SourceSansPro-Regular-webfont.woff
-      SourceSansPro-Semibold-webfont.eot
-      SourceSansPro-Semibold-webfont.svg
-      SourceSansPro-Semibold-webfont.ttf
-      SourceSansPro-Semibold-webfont.woff
-      appicons.eot
-      appicons.svg
-      appicons.ttf
-      appicons.woff
-      fontawesome-webfont.eot
-      fontawesome-webfont.svg
-      fontawesome-webfont.ttf
-      fontawesome-webfont.woff
-    ).freeze
+    ) + Dir[File.expand_path(File.join(File.dirname(__FILE__), 'assets', 'fonts', '*'))].map { |path| path.split('/').last }).freeze
 
     attr_accessor :sprockets_environment, :assets_dir
 
